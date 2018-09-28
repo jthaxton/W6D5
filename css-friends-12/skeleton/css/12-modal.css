@@ -1,0 +1,85 @@
+/* PHASE 12: Modal */
+.modal {
+  display: none;
+}
+
+.modal.is-open {
+  display: block;
+}
+
+.modal-screen {
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.8);
+
+}
+
+.modal-form {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  top: 100px;
+  /* left: 0; */
+  right: 0;
+  width: 250px;
+  left: 50%;
+  /* align-items: center; */
+}
+
+.input {
+  margin: 0 0 20px 0;
+}
+
+.input > label {
+  display: block;
+  font-weight: 700;
+  padding: 0 0 5px 0;
+}
+
+.input > input,
+.input > textarea {
+  display: block;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: calc(100% - 22px);
+  border-radius: 5px;
+}
+
+.input > input:focus,
+.input > textarea:focus {
+  border-color: #0c0;
+}
+
+.input > textarea {
+  height: 120px;
+}
+
+.submit {
+  margin: 20px 0 0 0;
+  padding: 0 0 3px 0;
+}
+
+.submit > button {
+  position: relative;
+  padding: 10px 20px;
+  color: #fff;
+  background: #0c0;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0 3px 0 0 #070;
+}
+
+.submit > button:hover {
+  background: #0b0;
+}
+
+.submit > button:active {
+  top: 3px;
+  background: #0a0;
+  box-shadow: none;
+}
